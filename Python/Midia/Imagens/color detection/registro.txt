@@ -1,0 +1,9 @@
+arquivo: marcada2.png
+porcentagem: 100.00%
+total_pixels: 1018300
+total_pintado: 1018300
+
+arquivo: marcada.png
+porcentagem: 17.77%
+total_pixels: 1018300
+total_pintado: 181000
