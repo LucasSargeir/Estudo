@@ -6,7 +6,7 @@ import os
 def color_percent_detection(file, color):
 	print(f'Analisando imagem {file}...')
 
-	im = Image.open('ffaimagens/'+file).convert('RGB')
+	im = Image.open('imagens/'+file).convert('RGB')
 	data = np.array(im)
 	vermelho, verde, azul = data.T
 
@@ -27,14 +27,14 @@ def color_percent_detection(file, color):
 if __name__ == '__main__':
 
 	result = []
-	arquivos = os.listdir('ffaimagens')
+	arquivos = os.listdir('imagens')
 	color = (237, 27, 36)
 	# file = 'marcada.png'
 
 	print(arquivos)
 
 	for a in arquivos:
-		if os.path.isfile('ffaimagens/'+a):
+		if os.path.isfile('imagens/'+a):
 			total_pixels, cont_area_vermelha, percent = color_percent_detection(a, color)
 			result.append({"arquivo": a, "porcentagem": percent, "total_pixels": total_pixels, "total_pintado": cont_area_vermelha}) 
 
