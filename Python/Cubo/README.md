@@ -10,7 +10,7 @@ Programa criado com o objetivo de gerar todos os embaralhamentos possíveis de u
 
 ## Regras
 
-Os embaralhamentos são gerados ignorando movimentos que se anulas, por exemplo, as sequencias de movimentos abaixo nunca serão vistas:
+Os embaralhamentos são gerados ignorando movimentos que se anulam, por exemplo, as sequencias de movimentos abaixo nunca serão vistas:
 
 - R R R
 - R R'
